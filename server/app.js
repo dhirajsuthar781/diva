@@ -7,7 +7,7 @@ require("dotenv").config();
 
 
 app.use(express.json());
-app.use(cors({origin:"http://localhost:3000"}));
+app.use(cors({origin:"https://diva-front.onrender.com"}));
 
 mongoose.connect(process.env.MONGODB_URI)
 .then(()=>{
