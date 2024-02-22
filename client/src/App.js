@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState({});
   useEffect((e) => {
 
-    fetch("http://localhost:4000").then(res => res.json()).then((e) => {
+    fetch("https://diva-backend.onrender.com").then(res => res.json()).then((e) => {
       setData(e);
 
     })
